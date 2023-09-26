@@ -1,9 +1,6 @@
-
+import java.util.*;
 public class DocTributario {
-}
-class Boleta{
-
-}
-class Factura{
-
+    private String numero;
+    private String rut;
+    private Date fecha;
 }
