@@ -1,10 +1,8 @@
 import java.util.Date;
 public class Factura extends DocTributario{
-    public Factura(String numero, String rut, Date fecha,Direccion direccion){
-        super(numero,rut,fecha,direccion);
-    }
+    public Factura(String numero, String rut, Date fecha){super(numero,rut,fecha);}
     @Override
     public String toString(){
-        return "Informacion Factura:     numero:"+numero+" | rut:"+rut+" | fecha:"+fecha+" | direccion:"+direccion.toString();
+        return "Factura:   |numero:"+numero+" | rut:"+rut+" | fecha:"+fecha+"|";
     }
 }
