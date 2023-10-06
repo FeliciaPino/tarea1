@@ -12,6 +12,14 @@ public class Transferencia extends Pago{
     public String getTipo(){return tipo;}
     public String getNumTransaccion(){return numTransaccion;}
     public void setTipo(String tipo){this.tipo =tipo;}
+    public void setNumTransaccion(String numTransaccion){this.numTransaccion = numTransaccion;}
 
-
+    @Override
+    public String toString() {
+        return "Transferencia{" +
+                "tipo='" + tipo + '\'' +
+                ", numTransaccion='" + numTransaccion + '\'' +
+                ", monto=" + monto +
+                '}';
+    }
 }
