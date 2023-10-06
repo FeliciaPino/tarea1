@@ -7,5 +7,12 @@ public class Main {
         System.out.println(bol);
         Articulo manza = new Articulo(120,"manzana","una dulce manzana roja",500f);
         System.out.println(manza);
+        DetalleOrden det = new DetalleOrden();
+        det.addArticulo(manza);
+        det.quitarArticulo(3);
+        System.out.println(det.calcPrecio());
+        System.out.println(det);
+        OrdenCompra orden = new OrdenCompra("en proceso");
+
     }
 }
