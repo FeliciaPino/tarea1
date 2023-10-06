@@ -7,4 +7,10 @@ public abstract class Pago {
         this.monto = monto;
         this.fecha = fecha;
     }
+
+    public Date getFecha() {return fecha;}
+
+    public float getMonto() {return monto;}
+    public void setMonto(float monto){this.monto = monto;}
+    public void setFecha(Date fecha){this.fecha = fecha;}
 }

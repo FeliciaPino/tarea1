@@ -13,4 +13,13 @@ public class Tarjeta extends Pago{
     public String getNumCuenta(){return numCuenta;}
     public void setBanco(String banco){this.banco = banco;}
     public void setNumCuenta(String numCuenta){this.numCuenta = numCuenta;}
+
+    @Override
+    public String toString() {
+        return "Tarjeta{" +
+                "banco='" + banco + '\'' +
+                ", numCuenta='" + numCuenta + '\'' +
+                ", monto=" + monto +
+                '}';
+    }
 }
