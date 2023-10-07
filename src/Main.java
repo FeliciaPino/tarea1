@@ -5,11 +5,16 @@ public class Main {
     public static void main(String[] args) {
         Cliente hom = new Cliente("Homero","34.234.123-1");
         Cliente bar = new Cliente("Bartolomeo","22.432.123-3");
+
+        System.out.println(hom);
+
         Articulo manza = new Articulo(120,"manzana","una dulce manzana roja",500f);
         Articulo donn = new Articulo(200,"dona","dona glazeda con sprinkles arcoiris",1200);
         Articulo silla = new Articulo(12000,"silla","silla comodo de madera",15000f);
         Articulo pel = new Articulo(3000,"pelota", "una pelota rebotante",3500);
         Articulo tas = new Articulo(500,"tasa","tasa para el cafe",5000f);
+
+        System.out.println(manza);
 
         Direccion dir = new Direccion("Calle falsa 123");
         dir.addCliente(hom);
@@ -18,6 +23,8 @@ public class Main {
         OrdenCompra orden1 = new OrdenCompra("en proceso",hom);
         orden1.addArticulo(donn);
         orden1.addArticulo(manza);
+
+        System.out.println(orden1);
 
         float vuelto = orden1.pagoEfectivo(new Efectivo(10000f,new Date()));
 
