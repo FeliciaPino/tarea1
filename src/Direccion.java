@@ -5,6 +5,7 @@ public class Direccion {
     private ArrayList<DocTributario> documentos;
     public Direccion(String direccion){
         this.direccion = direccion;
+        clientes = new ArrayList<Cliente>();
     }
 
     public void addCliente(Cliente cliente){

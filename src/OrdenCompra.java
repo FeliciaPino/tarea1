@@ -14,6 +14,7 @@ public class OrdenCompra {
         this.estado = estado;
         this.cliente = cliente;
         orden = new DetalleOrden();
+        pagos = new ArrayList<Pago>();
     }
     public float calcPrecioSinIVA(){
         return orden.calcPrecioSinIVA();
@@ -28,6 +29,7 @@ public class OrdenCompra {
         return orden.calcPeso();
     }
     public float pagoFaltante(){
+        if(pagos.isEmpty())return calcPrecio();
         float pagoTotal = 0f;
         for(Pago pag : pagos){
             pagoTotal += pag.getMonto();
