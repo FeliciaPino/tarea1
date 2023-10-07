@@ -30,9 +30,9 @@ public class DetalleOrden {
         articulos.add(articulo);
         cantidad++;
     }
-    public int quitarArticulo(int index){
+    public int quitarArticulo(Articulo articulo){
         try {
-            articulos.remove(index);
+            articulos.remove(articulo);
             return 0;
         }catch (Exception e){
             return -1;
