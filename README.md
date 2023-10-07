@@ -1,3 +1,6 @@
 # tarea1
-Este proyecto consiste en la realización de la tarea 1 de la clase de programación.
-A medida que nuestro equipo se familiarize mejor los parametros de la tarea y el funcionamento de github este readme sera actualizado.
+Esta tarea consiste en implementar un diagrama UML acerca de un sistema de compras.
+Integrante(s) : Felicia Paz Pino Aguin
+
+Instrucciones de ejecucion:
+En una terminal, entrar a la carpeta src, ahi ejecutar el comando "java Main"
