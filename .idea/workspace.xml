@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="de0d2f3c-dbf6-402e-acd6-cf694409c929" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DetalleOrden.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DetalleOrden.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Efectivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Efectivo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OrdenCompra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OrdenCompra.java" afterDir="false" />
     </list>
@@ -33,7 +33,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "pagos",
     "onboarding.tips.debug.path": "C:/Users/felix/Desktop/tareaprogra/tarea1/src/Main.java"
   }
 }]]></component>

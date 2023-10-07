@@ -27,6 +27,13 @@ public class OrdenCompra {
     public float calcPeso(){
         return orden.calcPeso();
     }
+    public float pagoFaltante(){
+        float pagoTotal = 0f;
+        for(Pago pag : pagos){
+            pagoTotal += pag.getMonto();
+        }
+        return Math.max(calcPrecio()-pagoTotal,0);
+    }
     public void addArticulo(Articulo articulo){
         orden.addArticulo(articulo);
     }
@@ -35,6 +42,11 @@ public class OrdenCompra {
     }
     public void pagar(Pago pago){
         pagos.add(pago);
+        pago.ordenCompra = this;
+    }
+    public float pagoEfectivo(Efectivo pago){
+        if(pagoFaltante()==0)return pago.calcDevolucion();
+        return 0f;
     }
     public void setDocumento(DocTributario doc){
         this.documento = doc;
